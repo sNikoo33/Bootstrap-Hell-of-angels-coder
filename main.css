@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --violetprimary: #7C00FF;
+    --bg-black: #000000;
+    --text-dark:#000000;
+}
+
+body{
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+/** Button */
+.bg-primary{
+    background-color: var(--violetprimary)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(86, 86, 86);
+}
+
+.btn:not(.nav-btns button):hover{
+    background-color: var(--violetprimary);
+    color: #fff;
+    border-color: var(--violetprimary);
+}
+
+/** Navbar */
+
+.nav-link:hover{
+    color: #7C00FF !important;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/** Header */
+#header{
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2a2929;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+/** Destacados */
+
+.card{
+    width: 300px!important;
+    margin: 20px;
+}
+
+.card:hover{
+    transform: scale(1.15);
+}
+
+.payment-methods i{
+    margin: 15px;
+    font-size: 5rem;
+    color:#000000;
+}
+
+.payment-methods{
+    font-size: 1.5rem;
+    color:#000000;
+}
+
+/** Footer */
+
+footer .brand{
+    letter-spacing: 1px;
+}
+
+/** Media Queries */
+
+@media (min-width:992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+
+/** Iframe - Nosotros */
+ 
+.media{
+    width: 100%;
+    height: 0;
+    padding-bottom:56.25%;
+    position: relative;
+}
+
+.media iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/** Contacto */
